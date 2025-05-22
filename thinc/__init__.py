@@ -2,12 +2,8 @@ from pythonforandroid.recipe import CompiledComponentsPythonRecipe
 
 
 class ThincRecipe(CompiledComponentsPythonRecipe):
-    version = "master"
-    url = (
-        "https://github.com/explosion/thinc/archive/90631684f8e4448fb5894cc8ab748a68939f2654.tar.gz"
-        if version == "master"
-        else "https://pypi.python.org/packages/source/t/thinc/thinc-{version}.tar.gz"
-    )
+    version = "9.1.1"
+    url = "https://pypi.python.org/packages/source/t/thinc/thinc-{version}.tar.gz"
     site_packages_name = "thinc"
     depends = [
         "setuptools",
