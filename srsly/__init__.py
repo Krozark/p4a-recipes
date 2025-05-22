@@ -11,7 +11,6 @@ class SrslyRecipe(CompiledComponentsPythonRecipe):
         "catalogue",
     ]
     call_hostpython_via_targetpython = False
-    install_in_hostpython = True
 
 
 recipe = SrslyRecipe()
