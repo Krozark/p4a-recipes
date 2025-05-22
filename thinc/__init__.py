@@ -2,7 +2,7 @@ from pythonforandroid.recipe import CompiledComponentsPythonRecipe
 
 
 class ThincRecipe(CompiledComponentsPythonRecipe):
-    version = "9.1.1"
+    version = "8.3.4"
     url = "https://pypi.python.org/packages/source/t/thinc/thinc-{version}.tar.gz"
     site_packages_name = "thinc"
     depends = [
