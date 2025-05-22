@@ -12,6 +12,7 @@ class PreshedRecipe(CompiledComponentsPythonRecipe):
         "murmurhash",
     ]
     call_hostpython_via_targetpython = False
+    install_in_hostpython = True
 
 
 recipe = PreshedRecipe()

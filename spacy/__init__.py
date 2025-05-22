@@ -50,8 +50,8 @@ class SpacyRecipe(CompiledComponentsPythonRecipe):
         if with_flags_in_cc:
             env["CXX"] += " -frtti -fexceptions"
 
-        env["LDFLAGS"] += " -L{}".format(self.get_stl_lib_dir(arch))
-        env["LIBS"] = env.get("LIBS", "") + " -l{}".format(self.stl_lib_name)
+        env["LDFLAGS"] += f" -L{self.get_stl_lib_dir(arch)}"
+        env["LIBS"] = env.get("LIBS", "") + f" -l{self.stl_lib_name}"
         return env
 
     def postbuild_arch(self, arch):

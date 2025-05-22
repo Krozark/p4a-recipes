@@ -10,6 +10,7 @@ class MarkupSafeRecipe(CompiledComponentsPythonRecipe):
         "pyparsing",
     ]
     call_hostpython_via_targetpython = False
+    install_in_hostpython = True
 
 
 recipe = MarkupSafeRecipe()
